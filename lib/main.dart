@@ -13,8 +13,19 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[600],
       ),
-      body: Center(
-        child: Image.asset('assets/moon.jpg'),
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: <Widget>[
+          Text('hello world'),
+          ElevatedButton(
+              onPressed: () {}, child: Icon(Icons.mail, color: Colors.white)),
+          Container(
+            color: Colors.cyan,
+            padding: EdgeInsets.all(30.0),
+            child: Text('inside container'),
+          )
+        ],
       ),
       floatingActionButton: const FloatingActionButton(
         onPressed: null,
